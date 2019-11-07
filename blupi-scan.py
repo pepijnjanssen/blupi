@@ -9,15 +9,19 @@ from collections import deque
 from math import sqrt
 
 # Global variables until we have a config file
-freqmin = 854000000 # DO NOT CHANGE
-freqmax = 860000000 # DO NOT CHANGE
+#freqmin = 854000000 # DO NOT CHANGE
+#freqmax = 860000000 # DO NOT CHANGE
+#Adjusted for C2000 Netherlnads
+freqmin = 380000000 # DO NOT CHANGE
+freqmax = 385000000 # DO NOT CHANGE
+
 sensitivity = 50
 sysdamping = 10
 freqdamping = 100
 powerfftw_path = "/usr/local/bin/rtl_power_fftw"
 baseline_path = "baseline_data.dat"
 totalbins = 960 * 3 # DO NOT CHANGE
-ppm_offset = 56
+ppm_offset = 7
 bline_int_t = 600 # Set to around 600 (10m)
 
 # Global that we'll keep
